@@ -1,0 +1,20 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2185
+
+Allows for opening <branch>:<file> patters using a git repo.
+
+You can open a file from the shell:
+
+    vim HEAD~10:filename
+
+or from inside vim:
+
+    :e branch:filename
+    :sp tag:filename
+
+you could even check what changed between the current edits and another revision:
+
+    :diffthis
+    :vsp HEAD:%
+    :diffthis
+
+but that's what gitdiff.vim (vimscript#1846) is for.
